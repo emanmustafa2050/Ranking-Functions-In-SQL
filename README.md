@@ -28,6 +28,7 @@ Useful for percentile analysis or distributing rows into groups.
 Example:
 SELECT Name, Score, NTILE(3) OVER (ORDER BY Score DESC) AS Bucket
 FROM Students;
+
 ----------------------------------------------------------------------------------------------------
 2. ROW_NUMBER()
 Assigns a unique sequential integer to each row within a partition, starting from 1 for the first row in each partition.
